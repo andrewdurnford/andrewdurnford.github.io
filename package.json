@@ -1,18 +1,12 @@
 {
-  "name": "andrewdurnford.github.io",
-  "version": "0.1.0",
+  "name": "@astrojs/example-blog",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "export": "next export",
-    "start": "next start"
+    "start": "astro dev",
+    "build": "astro build"
   },
-  "dependencies": {
-    "next": "10.2.3",
-    "next-compose-plugins": "^2.2.1",
-    "next-optimized-images": "^2.6.2",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
+  "devDependencies": {
+    "astro": "^0.13.0"
   }
 }

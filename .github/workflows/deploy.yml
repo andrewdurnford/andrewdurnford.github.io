@@ -24,7 +24,6 @@ jobs:
         
     - run: npm ci
     - run: npm run build
-    - run: npm run export
     - run: touch ./out/.nojekyll # disable jekyll
 
     - name: Deploy
@@ -32,4 +31,4 @@ jobs:
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages # target branch for gh pages
-        FOLDER: out # directory we want to use
+        FOLDER: dist # directory we want to use
